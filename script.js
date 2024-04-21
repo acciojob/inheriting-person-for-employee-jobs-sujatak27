@@ -31,12 +31,13 @@ class Employee extends Person {
 }
 
 // Test the classes
-const person1 = new Person("John", 30);
+const person1 = new Person("Alice", 25);
 person1.greet(); // Output: Hello, my name is John, I am 30 years old.
 
-const employee1 = new Employee("Alice", 25, "Software Engineer");
+const employee1 = new Employee("Bob", 30, "Manager");
 employee1.greet(); // Output: Hello, my name is Alice, I am 25 years old.
-employee1.jobGreet(); 
+employee1.jobGreet(); // Output : Hello, my name is Bob, I am 30 years old, and my job title is Manager.
 
 window.Person = Person;
 window.Employee = Employee;
+
